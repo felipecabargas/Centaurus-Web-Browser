@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-#Copyright (C) 2011  A. Felipe Cabargas M. <felipe.cabargas@gmail.com>
+#Copyright (C) 2011-2012  A. Felipe Cabargas M. <felipe.cabargas@gmail.com>
 #
 #   This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -14,12 +14,12 @@
 #
 #   You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-     
+
 from gi.repository import Gtk, WebKit
 import os, sys
-     
+
 UI_FILE = "centaurus.ui"
-     
+
 class Navegador:
 	def __init__(self):
 		self.builder = Gtk.Builder()
@@ -33,10 +33,10 @@ class Navegador:
         	self.webview = WebKit.WebView()
         	scrolled_window = self.builder.get_object("scrolledwindow")
         	scrolled_window.add(self.webview)
-     		
-		#self.webview.connect("titulo-cambiado", self.on_title_changed)
-		#self.webview.connect("icono-cambiado", self.on_icon_loaded)
-		#self.webview.connect("carga-finalizada", self.on_load_finished)
+	
+			#self.webview.connect("titulo-cambiado", self.on_title_changed)
+			#self.webview.connect("icono-cambiado", self.on_icon_loaded)
+			#self.webview.connect("carga-finalizada", self.on_load_finished)
 
         	self.window = self.builder.get_object("window")
         	self.window.show_all()
@@ -46,13 +46,13 @@ class Navegador:
 		if not "http://" in url:
 			url = "http://" + url
 		self.webview.load_uri(url)
-     
+
 	def destroy(self, window):
 		Gtk.main_quit()
-     
+
 def main():
     app = Navegador()
     Gtk.main()
-     
+
 if __name__ == "__main__":
     main()

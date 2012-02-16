@@ -1,9 +1,9 @@
-##################################################
-#                                                #
-#            Centaurus Web Browser               #
-#                      v0.1                      #
-#                                                #
-##################################################
+#############################################################################
+#                                                                           #
+#                          Centaurus Web Browser                            #
+#                                  v0.1.9                                   #
+#                                                                           #
+#############################################################################
 
 ACERCA DE
 -----------------------------------------------------------------------------
@@ -16,18 +16,19 @@ En tanto, el archivo "navegador.py" contiene el código de fuente Python que con
 REQUERIMIENTOS
 -----------------------------------------------------------------------------
 
-Para correr este programa necesitas las librerías GTK+3, que se encuentran disponibles en linux en los últimos releases de cada distro:
+Para correr este programa necesitas las librerías GTK+3, que se encuentran disponibles en Linux en los últimos releases de cada distro:
 
 Ubuntu 11.04 (con PPA)
 Ubuntu 11.10
+Ubuntu 12.04 (Alphas)
 Fedora 15
 Fedora 16
-
+... otras
 
 LICENCIA
 -----------------------------------------------------------------------------
 
-Copyright (C) 2011  A. Felipe Cabargas M. <felipe.cabargas@gmail.com>
+Copyright (C) 2011-2012  A. Felipe Cabargas M. <felipe.cabargas@gmail.com>
 
    This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -41,4 +42,3 @@ Copyright (C) 2011  A. Felipe Cabargas M. <felipe.cabargas@gmail.com>
 
    You should have received a copy of the GNU General Public License
    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
